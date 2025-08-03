@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #121314;
+    --accent-color: #4a90e2;
+    --secondary-color: #bdcee3;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --font-family: Verdana, sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 10px 0;
+}
+li:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 0 0 120px;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+margin-right: 24px;
+}
+.username h3,
+.username p {
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    color: var(--text-color);
+}
